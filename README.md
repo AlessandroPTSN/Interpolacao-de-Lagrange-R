@@ -3,7 +3,7 @@ Interpolando os pontos (0, 1), (2, 3), (4, -1) e (7, 4) utilizando o interpolaç
 
 ![1](https://user-images.githubusercontent.com/50224653/71485011-ecb15b00-27ed-11ea-90e3-70cafc605d9e.PNG)
 
-## Interpolação polinomial IP
+## Interpolação polinomial (IP)
 ```R
 x=c(0,2,4,7)
 y=c(1,3,-1,4)
@@ -31,8 +31,8 @@ f=function(x){1+4.1952381*x-2.0214286*x^2+0.2119048*x^3}
 
 Agora, utilizando método de interpolação por polinômio de Lagrange para avaliar a função interpoladora em um x qualquer.
 
+## Interpolação de Lagrange (IL)
 ```R
-#Interpolação de Lagrange  IL
 IL=function(c,x,y){
   #-----------------------------
   n=length(x)
@@ -74,3 +74,5 @@ points(4,-1,col="red",pch=20,lwd = 5);points(7,4,col="red",pch=20,lwd = 5)
 #novo ponto
 points(1,3.385714,col="red",pch=20,lwd = 5)
 ```
+![3](https://user-images.githubusercontent.com/50224653/71485804-cd1c3180-27f1-11ea-9552-2aba16e7cf07.PNG)
+

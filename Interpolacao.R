@@ -1,5 +1,5 @@
-#FUN«√O######################################################
-#InterpolaÁ„o polinomial IP
+#FUN√á√ÉO######################################################
+#Interpola√ß√£o polinomial IP
 
 
 x=c(0,2,4,7)
@@ -25,14 +25,15 @@ z=solve(m,y)
 return(z)
 }
 
-IP(x,y)#vai lhe dar a funÁao a + bx + cX2 + ... + zxn
+IP(x,y)#vai lhe dar a fun√ßao a + bx + cX2 + ... + zxn
 f=function(x){1+4.1952381*x-2.0214286*x^2+0.2119048*x^3}
 
 
 
-plot(f,from = 0 , to = 7,col="blue", lwd = 5)
+plot(1, type="n", xlab="x", ylab="f", xlim=c(0, 7), ylim=c(-2, 4))
 abline(h=-2:4,col="gray");abline(h=0,pch=20)
 abline(v=0:7,col="gray");abline(v=0,pch=20)
+plot(f,from = 0 ,add=T, to = 7,col="blue", lwd = 5)
 points(0,1,col="red",pch=20,lwd = 5);points(2,3,col="red",pch=20,lwd = 5)
 points(4,-1,col="red",pch=20,lwd = 5);points(7,4,col="red",pch=20,lwd = 5)
 
@@ -40,11 +41,11 @@ points(4,-1,col="red",pch=20,lwd = 5);points(7,4,col="red",pch=20,lwd = 5)
 
 
 ######################################################################################
-#Utilizando mÈtodo de interpolaÁ„o por polinÙmio de Lagrange 
-#para avaliar a funÁ„o interpoladora em um x qualquer.
+#Utilizando m√©todo de interpola√ß√£o por polin√¥mio de Lagrange 
+#para avaliar a fun√ß√£o interpoladora em um x qualquer.
 
 
-#InterpolaÁ„o de Lagrange  IL
+#Interpola√ß√£o de Lagrange  IL
 IL=function(c,x,y){
   #-----------------------------
   n=length(x)
@@ -78,9 +79,10 @@ IL(1,x,y)
 #3.385714
 
 
-plot(f,from = 0 , to = 7,col="blue", lwd = 5)
+plot(1, type="n", xlab="x", ylab="f", xlim=c(0, 7), ylim=c(-2, 4))
 abline(h=-2:4,col="gray");abline(h=0,pch=20)
 abline(v=0:7,col="gray");abline(v=0,pch=20)
+plot(f,from = 0 ,add=T, to = 7,col="blue", lwd = 5)
 points(0,1,col="red",pch=20,lwd = 5);points(2,3,col="red",pch=20,lwd = 5)
 points(4,-1,col="red",pch=20,lwd = 5);points(7,4,col="red",pch=20,lwd = 5)
 #novo ponto
